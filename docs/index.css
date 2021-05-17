@@ -1,4 +1,17 @@
+body {
+    margin: 0;
+    margin-top: 0;
+}
 h1 {
     text-align: center;
     font-weight: bolder;
+}
+.topHeading {
+    background-color: #2b2929;
+    margin-top: 0;
+}
+.topHeading h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
 }
