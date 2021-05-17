@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="popup_extension.css" media="screen"/>
+    </head>
+    <body>
+        <h1 id="titletext">Auto History Remover</h1>
+        <img src="images/clock.png" id="clock" alt="Clock" width="50px" height="auto"><br><br>
+        <table id="on_off_switch_for_extension">
+            <tr>
+                <th>
+                    <p id="autohistoryremovertext">Auto History Remover on?</p>
+                </th>
+                <th>
+                    <label class="switch">
+                        <input type="checkbox" id="switchforextension">
+                        <span class="slider round"></span>
+                    </label>
+                </th>
+            </tr>
+        </table><br><br>
+        <select name="timebeforehistoryclears" id="timebeforehistoryclearsdropdown">
+            <option value="1 day">1 Day</option>
+            <option value="1 week">1 Week</option>
+            <option value="2 weeks">2 Weeks</option>
+            <option value="1 month">1 Month</option>
+            <option value="3 months">3 Months</option>
+            <option value="6 months">6 Months</option>
+            <option value="1 year">1 Year</option>
+        </select>
+        <script src="popup_extension.js"></script>
+        <footer>
+            <p id="footertext">Made by Sebastian and Jacob</p>
+        </footer>
+    </body>
+</html>

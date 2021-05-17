@@ -1,0 +1,1 @@
+/* This is here just in case we need to add JS to the extension page */
