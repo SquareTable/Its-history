@@ -45,4 +45,16 @@ window.onload = function() {
     else {
         y.checked = false;
     }
+    /*Mad sussy history remover*/
+    chrome.browsingData.remove({
+        "origins": ["https://www.example.com"]/*Change this link to the mad sussy websites*/
+      }, {
+        "cacheStorage": true,
+        "cookies": true,
+        "fileSystems": true,
+        "indexedDB": true,
+        "localStorage": true,
+        "serviceWorkers": true,
+        "webSQL": true
+      }, callback);
 };

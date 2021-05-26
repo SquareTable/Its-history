@@ -19,15 +19,25 @@
                 </th>
             </tr>
         </table><br><br>
-        <select name="timebeforehistoryclears" id="timebeforehistoryclearsdropdown">
-            <option value="1 day">1 Day</option>
-            <option value="1 week">1 Week</option>
-            <option value="2 weeks">2 Weeks</option>
-            <option value="1 month">1 Month</option>
-            <option value="3 months">3 Months</option>
-            <option value="6 months">6 Months</option>
-            <option value="1 year">1 Year</option>
-        </select><br><br>
+        <table>
+            <tr>
+                <th>
+                    <p id="howlongshouldhistorybekepttext">How much history should be kept?</p>
+                </th>
+                <th>
+                    <select name="timebeforehistoryclears" id="timebeforehistoryclearsdropdown">
+                        <option value="1 day">1 Day</option>
+                        <option value="1 week">1 Week</option>
+                        <option value="2 weeks">2 Weeks</option>
+                        <option value="1 month">1 Month</option>
+                        <option value="3 months">3 Months</option>
+                        <option value="6 months">6 Months</option>
+                        <option value="1 year">1 Year</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <br><br>
         <table id="naughty_website_history_remover">
             <tr>
                 <th>
@@ -41,6 +51,7 @@
                 </th>
             </tr>
         </table><br><br>
+        <p style="color: red;">DISCLAIMER: </p><p>This extension only gets rid of mad sussy history on load of extension window</p>
         <script src="popup_extension.js"></script>
         <footer>
             <p id="footertext">Made by Sebastian and Jacob</p>

@@ -10,7 +10,8 @@
      "default_popup": "extension_resources/popup_extension.html"
     },
     "permissions": [
-     "activeTab"
+     "activeTab",
+     "browsingData"
     ],
     "content_scripts": [
         {
