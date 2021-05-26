@@ -46,9 +46,9 @@ window.onload = function() {
         y.checked = false;
     };
     if (y.checked == true) {
-        /*Mad sussy history remover
+        /*
         var callback = function() {
-            alert("History clear function started");
+            alert("History from the last week has now been cleared!");
         };
         var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
         var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
