@@ -12,22 +12,22 @@ document.getElementById('switchforextension').addEventListener('click', function
         console.log("The if statement says the checkbox is not checked");
     }
 });
-/*
+
 document.getElementById('switchformadsussyhistoryremover').addEventListener('click', function() {
     var x = document.getElementById('switchformadsussyhistoryremover');
     var ischeckboxchecked = x.checked;
     console.log(ischeckboxchecked)
     console.log(x.checked)
     if (x.checked == true) {
-        localStorage.setItem("stateOfExtensionCheckbox", ischeckboxchecked);
-        console.log("The if statement says the checkbox is checked");
+        localStorage.setItem("stateOfMadSussyHistoryRemoverCheckbox", ischeckboxchecked);
+        console.log("The if statement says the mad sussy history remover checkbox is checked");
     }
     else {
-        localStorage.setItem("stateOfExtensionCheckbox", ischeckboxchecked);
-        console.log("The if statement says the checkbox is not checked");
+        localStorage.setItem("stateOfMadSussyHistoryRemoverCheckbox", ischeckboxchecked);
+        console.log("The if statement says the mad sussy history remover checkbox is not checked");
     }
 });
-*/
+
 window.onload = function() {
     var y = document.getElementById('switchforextension');
     var localstoragepull = localStorage.getItem("stateOfExtensionCheckbox")
@@ -37,5 +37,12 @@ window.onload = function() {
     else {
         y.checked = false;
     }
-    /*Add this thing but for mad susy switch*/
+    var y = document.getElementById('switchformadsussyhistoryremover');
+    var localstoragepull = localStorage.getItem("stateOfMadSussyHistoryRemoverCheckbox");
+    if (localstoragepull == "true") {
+        y.checked = true;
+    }
+    else {
+        y.checked = false;
+    }
 };
