@@ -30,13 +30,13 @@ document.getElementById('switchformadsussyhistoryremover').addEventListener('cli
 
 window.onload = function() {
     var y = document.getElementById('switchforextension');
-    var localstoragepull = localStorage.getItem("stateOfExtensionCheckbox")
+    var localstoragepull = localStorage.getItem("stateOfExtensionCheckbox");
     if (localstoragepull == "true") {
         y.checked = true;
     }
     else {
         y.checked = false;
-    }
+    };
     var y = document.getElementById('switchformadsussyhistoryremover');
     var localstoragepull = localStorage.getItem("stateOfMadSussyHistoryRemoverCheckbox");
     if (localstoragepull == "true") {
@@ -44,17 +44,8 @@ window.onload = function() {
     }
     else {
         y.checked = false;
+    };
+    if (y.checked == true) {
+        /*Mad sussy history remover*/
     }
-    /*Mad sussy history remover*/
-    chrome.browsingData.remove({
-        "origins": ["https://www.example.com"]/*Change this link to the mad sussy websites*/
-      }, {
-        "cacheStorage": true,
-        "cookies": true,
-        "fileSystems": true,
-        "indexedDB": true,
-        "localStorage": true,
-        "serviceWorkers": true,
-        "webSQL": true
-      }, callback);
 };
