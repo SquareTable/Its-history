@@ -46,6 +46,29 @@ window.onload = function() {
         y.checked = false;
     };
     if (y.checked == true) {
-        /*Mad sussy history remover*/
+        /*Mad sussy history remover
+        var callback = function() {
+            alert("History clear function started");
+        };
+        var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+        var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+        chrome.browsingData.remove({
+        "since": oneWeekAgo
+        }, {
+        "appcache": true,
+        "cache": true,
+        "cacheStorage": true,
+        "cookies": true,
+        "downloads": true,
+        "fileSystems": true,
+        "formData": true,
+        "history": true,
+        "indexedDB": true,
+        "localStorage": true,
+        "passwords": true,
+        "serviceWorkers": true,
+        "webSQL": true
+        }, callback);
+        */
     }
 };
