@@ -11,7 +11,8 @@
     },
     "permissions": [
      "activeTab",
-     "browsingData"
+     "browsingData",
+     "history"
     ],
     "content_scripts": [
         {

@@ -55,19 +55,7 @@ window.onload = function() {
         chrome.browsingData.remove({
         "since": oneWeekAgo
         }, {
-        "appcache": true,
-        "cache": true,
-        "cacheStorage": true,
-        "cookies": true,
-        "downloads": true,
-        "fileSystems": true,
-        "formData": true,
-        "history": true,
-        "indexedDB": true,
-        "localStorage": true,
-        "passwords": true,
-        "serviceWorkers": true,
-        "webSQL": true
+        "history": true
         }, callback);
         */
     }
